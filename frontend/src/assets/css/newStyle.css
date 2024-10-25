@@ -1,0 +1,308 @@
+:root {
+  --black--: #000;
+  --white--: #fff;
+  --theme--: #e70765;
+}
+
+
+
+.closeBtn {
+  background-color: var(--theme--);
+  color: var(--white--);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.formFooter {
+  padding: 10px 0 !important;
+}
+
+.boxCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.text-error {
+  font-size: 14px;
+  color: red;
+}
+.text-red{
+  font-size: 14px;
+  color: red;
+}
+
+/* Dial css */
+.dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4196078431);
+  z-index: 999;
+  display: inline-flex;
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.dialog .mainDiaogBox {
+  background-color: #fff;
+  padding: 20px;
+  max-height: 98vh;
+  overflow: auto;
+  border-radius: 32px !important;
+}
+.dialog .mainDiaogBox .formBody {
+  max-height: 600px;
+  overflow: auto;
+}
+.dialog .mainDiaogBox .formBody > div {
+  margin-bottom: 10px;
+}
+.dialog .mainDiaogBox .formBody .errorMessage {
+  color: red;
+}
+.dialog .mainDiaogBox .closeButton {
+  font-size: 30px;
+  background-color: rgba(28, 43, 32, 0.514);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  color: #fff;
+  margin-left: auto;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .dialog .mainDiaogBox h2 {
+    font-size: 20px;
+  }
+  .dialog .mainDiaogBox .closeButton {
+    font-size: 20px;
+    height: 25px;
+    width: 25px;
+  }
+}
+
+
+/* Input fields css */
+
+.inputData {
+  font-family: "Inter", sans-serif, sans-serif !important;
+  font-size: 20px;
+  position: relative !important;
+  text-align: start !important;
+
+}
+ .errorMessage {
+  margin-top: 5px;
+  font-size: 16px;
+  color: red;
+}
+@media screen and (max-width: 768px) {
+   .errorMessage {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+   .errorMessage {
+    font-size: 12px;
+  }
+}
+ input:invalid ~ .errorMessage {
+  color: red;
+  display: block;
+}
+.inputData label {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 15px;
+  color: #7e7e7e;
+}
+@media screen and (max-width: 576px) {
+  .inputData label {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .inputData {
+    font-size: 16px;
+  }
+}
+
+.inputData input {
+  width: 100%;
+  height: 40px;
+  background-color: #fafafa;
+  padding: 0 20px;
+  margin-top: 5px;
+  font-size: 15px;
+  border-radius: 8px;
+  color: #000000 !important;
+  font-weight: 500;
+  /* For Input Type Search */
+  /* For Input Type Number */
+  /* Type Radio And Check Box */
+  /* For Input Type File */
+}
+.inputData input:focus {
+  outline-color: rgba(28, 43, 32, 0.514);
+  outline-width: 1px;
+}
+.inputData input::-moz-placeholder {
+  color: #b1b1b1;
+  font-size: 16px;
+}
+.inputData input::placeholder {
+  color: #b1b1b1;
+  font-size: 16px;
+}
+@media screen and (max-width: 992px) {
+  .inputData input::-moz-placeholder {
+    font-size: 16px;
+  }
+  .inputData input::placeholder {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .inputData input {
+    padding: 0 15px;
+    height: 38px;
+    margin-top: 2px;
+    font-size: 12px;
+  }
+  .inputData input::-moz-placeholder {
+    font-size: 12px;
+  }
+  .inputData input::placeholder {
+    font-size: 12px;
+  }
+}
+
+
+.mainLoaderBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #00000070;
+  width: 100%;
+  height: 100%;
+  z-index: 111111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 3px solid;
+  border-color: #fff #fff transparent transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.loader::after,
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid;
+  border-color: transparent transparent var(--theme--) var(--theme--);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotationBack 0.5s linear infinite;
+  transform-origin: center center;
+}
+
+.loader::before {
+  width: 32px;
+  height: 32px;
+  border-color: var(--theme--) var(--theme--) transparent transparent;
+  animation: rotation 1.5s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+
+
+
+.paginationRoot{
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+}
+.paginationRoot button{
+  background-color: var(--theme--);
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.paginationRoot button i{
+  color: white
+}
+
+
+
+
+#sidebar .active .fa-solid{
+    color: #FFF !important;
+}
+
+#sidebar .active span{
+    color: #FFF !important;
+}
+
+#sidebar .active svg{
+    color: #FFF !important;
+}
+
+.react-tooltip{
+    z-index: 1000!important;
+}
+
+.bg-theme{
+  background-color: var(--theme--)!important;
+}

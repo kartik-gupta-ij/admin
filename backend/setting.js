@@ -1,0 +1,45 @@
+module.exports = {
+  _id: "63ce2632954170843ad9dba4",
+  agoraKey: "1157aaab348246c98c316680d6e8ebac",
+  agoraCertificate: "20cd864973c248a5b81a23d7da51cd88",
+  privacyPolicyLink:
+    "https://www.privacypolicygenerator.info/live.php?token=AuLSXTICG8cp8rsseiWQWy9GCbNpZuxR",
+  privacyPolicyText: "PRIVACY POLICY TEXT",
+  termAndCondition:
+    "https://www.privacypolicygenerator.info/live.php?token=AuLSXTICG8cp8rsseiWQWy9GCbNpZuxR",
+  googlePlayEmail: "GOOGLE PLAY EMAIL",
+  googlePlayKey: "GOOGLE PLAY KEY",
+  googlePlaySwitch: true,
+  stripeSwitch: true,
+  stripePublishableKey:
+    "pk_test_51OZQX5AhTWDvQvHlfkRsBZNl7Kq1NIo9Ua1CL2qUCZSd9SjEHQJvrXRd03nTicEbvf7Mc5VfNt9EikbPaMiiwx9100xJvqsVL7",
+  stripeSecretKey:
+    "sk_test_51OZQX5AhTWDvQvHldJrp8MahnPcPZ0VsyBmoK3JuxAlval1rr6mpSH90Xl1fASQbcDdUAwmiCJrfrRt9xSYh9OAB00SkorS0Zf",
+  isAppActive: true,
+  welcomeMessage: "Welcome To Tindo app",
+  chargeForMessage: 0,
+  coin: 10,
+  diamond: 30,
+  videoCallCharge: 15,
+  withdrawLimit: 30,
+  razorPay: false,
+  razorPayId: "RAZOR_PAY_ID",
+  razorSecretKey: "rzp_test_NNbwJ9tmM0fbxj",
+  contactSupport: "https://www.google.com/",
+  howToWithdraw: "https://www.google.com/",
+  isFake: true,
+  privateKey: {
+    type: "service_account",
+    project_id: "tengo-clone",
+    private_key_id: "ef0e0b694c2aabaeb2d0bb13d458fdf395d70bb0",
+    private_key: process.env.PRIVATE_KEY,
+    client_email: "firebase-adminsdk-oz3ct@tengo-clone.iam.gserviceaccount.com",
+    client_id: "117070784466236740073",
+    auth_uri: "https://accounts.google.com/o/oauth2/auth",
+    token_uri: "https://oauth2.googleapis.com/token",
+    auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs",
+    client_x509_cert_url:
+      "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-oz3ct%40tengo-clone.iam.gserviceaccount.com",
+    universe_domain: "googleapis.com",
+  },
+};
